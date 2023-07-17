@@ -2,6 +2,7 @@ import Category from "../models/category";
 import Meal from "../models/meal";
 
 export const CATEGORIES = [
+  //id, title, color
   new Category("c1", "Italian", "#f5428d"),
   new Category("c2", "Quick & Easy", "#f54242"),
   new Category("c3", "Hamburgers", "#f5a442"),
@@ -320,6 +321,29 @@ export const MEALS = [
       "Salad",
       "Salt, Pepper and Olive Oil",
     ],
+    [
+      "Wash, peel and cut the asparagus",
+      "Cook in salted water",
+      "Salt and pepper the asparagus",
+      "Roast the pine nuts",
+      "Halve the tomatoes",
+      "Mix with asparagus, salad and dressing",
+      "Serve with Baguette",
+    ],
+    true,
+    true,
+    true,
+    true
+  ),
+  new Meal(
+    "m11",
+    ["c2", "c5", "c10"],
+    "Hi",
+    "luxurious",
+    "simple",
+    "https://images.chosun.com/resizer/ULiHFSvfn-irrQk8IoYKnR1LUC4=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/JNA4MQKSONGMFMSGUAYJBXYQUA.jpg",
+    30,
+    ["Tortoise"],
     [
       "Wash, peel and cut the asparagus",
       "Cook in salted water",
