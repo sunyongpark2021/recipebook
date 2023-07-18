@@ -7,7 +7,7 @@ function List({ data }) {
     </View>
   ));
 }
-
+//as the data to render is not large, map was used instead of flatlist
 export default List;
 
 const styles = StyleSheet.create({

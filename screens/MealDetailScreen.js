@@ -1,13 +1,5 @@
 import { useContext, useLayoutEffect } from "react";
-import {
-  View,
-  Text,
-  Image,
-  StyleSheet,
-  ScrollView,
-  onPress,
-  Button,
-} from "react-native";
+import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
 
 import IconButton from "../components/IconButton.js";
 import MealDetails from "../components/MealDetails";
@@ -27,7 +19,7 @@ function MealDetailScreen({ route, navigation }) {
 
   const selectedMeal = MEALS.find((meal) => meal.id === mealId);
 
-  const mealsIsFavorite = favoriteMealIds.includes(mealId); //will return tru is mealId is part of Ids
+  const mealsIsFavorite = favoriteMealIds.includes(mealId); //will return tru is if this specific mealId is included in the store's favoriteMeals
 
   function changeFavoritesStatusHandler() {
     if (mealsIsFavorite) {
@@ -94,9 +86,6 @@ const styles = StyleSheet.create({
   },
   detailText: {
     color: "black",
-  },
-  listOuterContainer: {
-    alignItems: "center",
   },
   listOuterContainer: {
     alignItems: "center",

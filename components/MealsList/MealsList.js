@@ -15,7 +15,7 @@ function MealsList({ items }) {
     };
     return <MealItem {...mealItemProps} />;
   }
-
+  ///... will pass all the props given
   return (
     <View style={styles.container}>
       <FlatList
@@ -26,6 +26,7 @@ function MealsList({ items }) {
     </View>
   );
 }
+//Here using the list of meals extracted from <MealsList items={displayedMeals} />, we list the list using
 
 export default MealsList;
 
