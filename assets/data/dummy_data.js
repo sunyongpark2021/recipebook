@@ -338,7 +338,7 @@ export const MEALS = [
   new Meal(
     "m11",
     ["c2", "c5", "c10"],
-    "Hi",
+    "용봉탕",
     "luxurious",
     "simple",
     "https://images.chosun.com/resizer/ULiHFSvfn-irrQk8IoYKnR1LUC4=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/JNA4MQKSONGMFMSGUAYJBXYQUA.jpg",

@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 function FavoriteScreen() {
   // const favoriteMealsCtx = useContext(FavoritesContext);
   const favoriteMealIds = useSelector((state) => state.favoriteMeals.ids);
-
+  //using useSelector, it collets ids of the favoritemeals from the redux store
   const favoriteMeals = MEALS.filter((meal) =>
     favoriteMealIds.includes(meal.id)
   );
@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     fontWeight: "bold",
-    color: " white",
+    color: "white",
   },
 });
