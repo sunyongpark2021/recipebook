@@ -1,18 +1,43 @@
 import Category from "../models/category";
 import Meal from "../models/meal";
-
+import { ImageBackground } from "react-native";
 export const CATEGORIES = [
   //id, title, color
-  new Category("c1", "Italian", "#f5428d"),
-  new Category("c2", "Quick & Easy", "#f54242"),
-  new Category("c3", "Hamburgers", "#f5a442"),
-  new Category("c4", "German", "#f5d142"),
-  new Category("c5", "Light & Lovely", "#368dff"),
-  new Category("c6", "Exotic", "#41d95d"),
-  new Category("c7", "Breakfast", "#9eecff"),
-  new Category("c8", "Asian", "#b9ffb0"),
-  new Category("c9", "French", "#ffc7ff"),
-  new Category("c10", "Summer", "#47fced"),
+  new Category(
+    "c1",
+    "Italian",
+    "#72ba7cff",
+    require("../images/italian.png") // Use require with the local path
+  ),
+  new Category(
+    "c2",
+    "Quick & Easy",
+    "#72ba7cff",
+    require("../images/quick.png")
+  ),
+  new Category(
+    "c3",
+    "Hamburgers",
+    "#72ba7cff",
+    require("../images/hamburger.png")
+  ),
+  new Category("c4", "German", "#72ba7cff", require("../images/german.png")),
+  new Category(
+    "c5",
+    "Light & Lovely",
+    "#72ba7cff",
+    require("../images/light.png")
+  ),
+  new Category("c6", "Exotic", "#72ba7cff", require("../images/exotic.png")),
+  new Category(
+    "c7",
+    "Breakfast",
+    "#72ba7cff",
+    require("../images/breakfast.png")
+  ),
+  new Category("c8", "Asian", "#72ba7cff", require("../images/asian.png")),
+  new Category("c9", "French", "#72ba7cff", require("../images/french.png")),
+  new Category("c10", "Summer", "#72ba7cff", require("../images/summer.png")),
 ];
 
 export const MEALS = [
@@ -40,11 +65,7 @@ export const MEALS = [
       "After 2 minutes, add the tomato pieces, salt, pepper and your other spices.",
       "The sauce will be done once the spaghetti are.",
       "Feel free to add some cheese on top of the finished dish.",
-    ],
-    false,
-    true,
-    true,
-    true
+    ]
   ),
 
   new Meal(
@@ -66,11 +87,7 @@ export const MEALS = [
       "Butter one side of the white bread",
       "Layer ham, the pineapple and cheese on the white bread",
       "Bake the toast for round about 10 minutes in the oven at 200°C",
-    ],
-    false,
-    false,
-    false,
-    false
+    ]
   ),
 
   new Meal(
@@ -95,11 +112,7 @@ export const MEALS = [
       "Quickly fry the buns for c. 1 minute on each side",
       "Bruch buns with ketchup",
       "Serve burger with tomato, cucumber and onion",
-    ],
-    false,
-    false,
-    false,
-    true
+    ]
   ),
 
   new Meal(
@@ -128,11 +141,7 @@ export const MEALS = [
       "Make sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes ‘fluffy’.",
       "Remove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.",
       "Place the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.",
-    ],
-    false,
-    false,
-    false,
-    false
+    ]
   ),
 
   new Meal(
@@ -160,11 +169,7 @@ export const MEALS = [
       "Process mustard, vinegar and olive oil into a dessing",
       "Prepare the salad",
       "Add salmon cubes and dressing",
-    ],
-    true,
-    false,
-    true,
-    true
+    ]
   ),
 
   new Meal(
@@ -193,11 +198,7 @@ export const MEALS = [
       "Whip the cream and lift it under die orange mass",
       "Cool down again for at least 4 hours",
       "Serve with orange peel",
-    ],
-    true,
-    false,
-    true,
-    false
+    ]
   ),
 
   new Meal(
@@ -222,11 +223,7 @@ export const MEALS = [
       "Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.",
       "Heat a lightly oiled griddle or frying pan over medium high heat.",
       "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.",
-    ],
-    true,
-    false,
-    true,
-    false
+    ]
   ),
 
   new Meal(
@@ -253,11 +250,7 @@ export const MEALS = [
       "Add chicken breast + 250ml of water and cook everything for 10 minutes",
       "Add coconut milk",
       "Serve with rice",
-    ],
-    true,
-    false,
-    false,
-    true
+    ]
   ),
 
   new Meal(
@@ -300,11 +293,7 @@ export const MEALS = [
       "Add the rest of the egg whites; gently fold into the chocolate with a spatula, lifting from the bottom and folding over.",
       "Stop mixing after the egg white disappears. Divide mixture between 2 prepared ramekins. Place ramekins on prepared baking sheet.",
       "Bake in preheated oven until scuffles are puffed and have risen above the top of the rims, 12 to 15 minutes.",
-    ],
-    true,
-    false,
-    true,
-    false
+    ]
   ),
   new Meal(
     "m10",
@@ -329,33 +318,150 @@ export const MEALS = [
       "Halve the tomatoes",
       "Mix with asparagus, salad and dressing",
       "Serve with Baguette",
-    ],
-    true,
-    true,
-    true,
-    true
+    ]
   ),
   new Meal(
     "m11",
-    ["c2", "c5", "c10"],
-    "용봉탕",
-    "luxurious",
+    ["c7", "c9"],
+    "French Toast",
+    "Affordable",
     "simple",
-    "https://images.chosun.com/resizer/ULiHFSvfn-irrQk8IoYKnR1LUC4=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/JNA4MQKSONGMFMSGUAYJBXYQUA.jpg",
-    30,
-    ["Tortoise"],
+    "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_16/1558142/martha-recipes-today-square-200413.jpg",
+    20,
     [
-      "Wash, peel and cut the asparagus",
-      "Cook in salted water",
-      "Salt and pepper the asparagus",
-      "Roast the pine nuts",
-      "Halve the tomatoes",
-      "Mix with asparagus, salad and dressing",
-      "Serve with Baguette",
+      "1 cup of milk",
+      "2 large eggs",
+      "1 teaspoon of vanilla extract",
+      "Some salt",
+      "7 thichly sliced bread",
+      "2 tablespoon of butter",
     ],
-    true,
-    true,
-    true,
-    true
+    [
+      "Put in milk, eggs, vanilla extract, and salt in a bowl and mix well",
+      "Drop in the bread slices and soak both sides",
+      "Heat a skillet to medium heat",
+      "Put the bread on skillet and cook for 6 minutes (3 minutes on each side)",
+      "Take out the bread slices and place a butter on top of them",
+      "Enjoy the meal",
+    ]
+  ),
+
+  new Meal(
+    "m12",
+    ["c1", "c5"],
+    "Gambas Al Ajillo",
+    "Somewhat pricy",
+    "advanced",
+    "https://costabravasd.com/wp-content/uploads/2023/01/cb-dish-gambas-al-ajillo-01.jpg",
+    40,
+    [
+      "Salt",
+      "1/2 cup of sliced garlic",
+      "1/4 cup extra-virgin olive oil",
+      "1 small red chile, crumbled",
+      "1/2 cup of minced parsley",
+      "2 tablespoons of white wine",
+      "1 teaspoon of lemon zest",
+      "Crusty bread",
+    ],
+    [
+      "Toss the shrimp with 1 teaspoon of salt and let stand for 10 minutes.",
+      "Cook the garlic and olive oil and over moderately low heat, stirring occasionally.",
+      "Cook the garlic until it becomes brown, 8 to 10 minutes.",
+      "Add the chile and cook, stirring, until fragrant, 15 to 30 seconds.",
+      "Add the shrimp and cook over moderately low heat, stirring and turning the shrimp occasionally for 5 minutes",
+      "Stir in the parsley, lemon, lemon zest and a pinch of salt.",
+      "Remove from the heat and let stand for 3 to 5 minutes. ",
+      "Enjoy it with crusty bread",
+    ]
+  ),
+
+  new Meal(
+    "m13",
+    ["c5", "c8"],
+    "Bibimbap",
+    "Affordable",
+    "advanced",
+    "https://blog.southofseoul.net/wp-content/uploads/2022/08/dulsot-bibimbap-scaled.jpg",
+    60,
+    [
+      "120g of minced beef",
+      "1 tablespoon of soy sauce",
+      "1 tablespoon of sesame oil",
+      "1 teaspoon of minced garlic",
+      "150g of spinach",
+      "300g of bean sprouts",
+      "100g of of mushroom",
+      "100g of carrots",
+      "1200g of steamed rice",
+      "3 eggs",
+      "2 tablespoon of gochujang",
+    ],
+    [
+      "Put the spinach in boiling water for 30 seconds and wash in cold water",
+      "Put mushroom, garlic and carrot in a pan and saute them until they are slightly brown color",
+      "Cook the minced beef until your preferance",
+      "Cook the eggs sunnyside up",
+      "Put rice in a bowl and put the vegetables on top of the rice",
+      "Put in the beef and eggs in the bowl too",
+      "Add sesame oil and gochujang to your preferance",
+      "Mix them like salad and eat",
+    ]
+  ),
+  new Meal(
+    "m14",
+    ["c4", "c7"],
+    "German Apple Cake",
+    "Affordable",
+    "advanced",
+    "https://data.thefeedfeed.com/recommended/15224403305abe988ae7fa9.jpg",
+    60,
+    [
+      "1 cup of oil",
+      "3 medium eggs",
+      "2 cups of white sugar",
+      "1 teaspoon of venilla extract",
+      "2.5 cups of flour",
+      "2 teaspoons of cinnamon",
+      "1 teaspoon of baking soda",
+      "1/2 teaspoon of salt",
+      "5 cups of peel and diced apples",
+    ],
+    [
+      "Preheat the oven to 350 degrees F",
+      "Mix eggs and oil in a bowl until creamy with sugar and vanilla extract",
+      "Add in cinnamon, baking soda, and salt in the bowl.",
+      "Slowly add the flour to the mixture. Mix well. Add in the apples",
+      "Bake the cake in the oven for 45 minutes",
+    ]
+  ),
+  new Meal(
+    "m15",
+    ["c3", "c6"],
+    "Hamburger soup",
+    "Affordable",
+    "Intermediate",
+    "https://data.thefeedfeed.com/recommended/post_2943932.jpg",
+    80,
+    [
+      "1.5 pound of ground beef",
+      "6 cups of water",
+      "32 ounce of diced tomatoes",
+      "12 ounce of corn kernels",
+      "6 ounce of tomato sauce",
+      "1 cup of chopped carrots",
+      "1 cup of chopped celery",
+      "2 cups of chopped onion",
+      "5 beef bouillon cubes",
+      "2 tablespoons of ketchup",
+      "2 teaspoon of basil",
+      "1 teaspoon of salt",
+    ],
+    [
+      "Heat a large skillet to medium heat",
+      "Cook and stir the ground beef for 5 to 7 minutes",
+      "Add in all the ingredients including the cooked beef in a pot",
+      "Add in the water as needed and cook for 1 hour ",
+    ]
   ),
 ];
