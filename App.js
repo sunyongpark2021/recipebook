@@ -18,7 +18,7 @@ function DrawerNavigator() {
   return (
     <Drawer.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: "#cccccc" }, //top header color
+        headerStyle: { backgroundColor: "#dbbd96" }, //top header color
         headerTintColor: "black", //header text color
         drawerContentStyle: { backgroundColor: "#f3c87a" },
         drawerInactiveTintColor: "black", //color of the tab that is currently inactive
@@ -58,7 +58,7 @@ export default function App() {
           <Stack.Navigator
             screenOptions={{
               headerStyle: { backgroundColor: "#cccccc" },
-              headerTintColor: "white",
+              headerTintColor: "black",
               contentStyle: { backgroundColor: "white" },
             }} //these are default screen options that will be applied to all screens
           >
