@@ -19,8 +19,8 @@ function DrawerNavigator() {
     <Drawer.Navigator
       screenOptions={{
         headerStyle: { backgroundColor: "#cccccc" }, //top header color
-        headerTintColor: "white", //header text color
-        drawerContentStyle: { backgroundColor: "yellow" },
+        headerTintColor: "black", //header text color
+        drawerContentStyle: { backgroundColor: "#f3c87a" },
         drawerInactiveTintColor: "black", //color of the tab that is currently inactive
         drawerActiveTintColor: "#351401", //color of the tab that is currently active
         drawerActiveBackgroundColor: "#e4baa1",

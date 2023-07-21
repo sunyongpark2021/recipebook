@@ -6,38 +6,28 @@ export const CATEGORIES = [
   new Category(
     "c1",
     "Italian",
-    "#72ba7cff",
+    "orange",
     require("../images/italian.png") // Use require with the local path
   ),
-  new Category(
-    "c2",
-    "Quick & Easy",
-    "#72ba7cff",
-    require("../images/quick.png")
-  ),
+  new Category("c2", "Quick & Easy", "orange", require("../images/quick.png")),
   new Category(
     "c3",
     "Hamburgers",
-    "#72ba7cff",
+    "orange",
     require("../images/hamburger.png")
   ),
-  new Category("c4", "German", "#72ba7cff", require("../images/german.png")),
+  new Category("c4", "German", "orange", require("../images/german.png")),
   new Category(
     "c5",
     "Light & Lovely",
-    "#72ba7cff",
+    "orange",
     require("../images/light.png")
   ),
-  new Category("c6", "Exotic", "#72ba7cff", require("../images/exotic.png")),
-  new Category(
-    "c7",
-    "Breakfast",
-    "#72ba7cff",
-    require("../images/breakfast.png")
-  ),
-  new Category("c8", "Asian", "#72ba7cff", require("../images/asian.png")),
-  new Category("c9", "French", "#72ba7cff", require("../images/french.png")),
-  new Category("c10", "Summer", "#72ba7cff", require("../images/summer.png")),
+  new Category("c6", "Exotic", "orange", require("../images/exotic.png")),
+  new Category("c7", "Breakfast", "orange", require("../images/breakfast.png")),
+  new Category("c8", "Asian", "orange", require("../images/asian.png")),
+  new Category("c9", "French", "orange", require("../images/french.png")),
+  new Category("c10", "Summer", "orange", require("../images/summer.png")),
 ];
 
 export const MEALS = [
